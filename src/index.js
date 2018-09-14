@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
   <App
-    stories={store.getState()}
+    stories={store.getState().storyState}
     onArchive={objectID => {
       console.log(objectID);
     }}
