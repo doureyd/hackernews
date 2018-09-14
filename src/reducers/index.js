@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import storyReducer from '../reducers/story';
-import archiveReducer from '../reducers/archive';
+import storyReducer from './story';
+import archiveReducer from './archive';
 
 const rootReducer = combineReducers({
   storyState: storyReducer,
-  archiveReducer: archiveReducer,
+  archiveState: archiveReducer,
 });
 
 export default rootReducer;
